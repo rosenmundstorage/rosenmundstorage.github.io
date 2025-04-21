@@ -1,70 +1,53 @@
-/* Resetting default margin and font-family */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #0f4c75, #3282b8);
-    color: #fff;
+    padding: 0;
 }
 
-/* Styling for the main container */
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px;
 }
 
-/* Styling for images inside the container */
-.container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Common styling for headings, links, and paragraphs inside the container */
-.container h1, .container h2, .container a, .container p {
-    margin: 10px 0;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Styling for the main heading */
-.container h1 {
-    color: #15f8e1; /* Neon yellow */
-}
-
-/* Styling for subheadings */
-.container h2 {
-    color: #15f8e1; /* Neon blue */
-}
-
-/* Styling for download links */
-.container a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #5f27cd; /* Premium-looking color */
-    color: #fff;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease; /* Smooth transition for the background color */
 }
 
-/* Hover effect for download links */
-.container a:hover {
-    background: #2ecc71; /* Different color on hover */
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Styling for additional information paragraphs */
-.container p {
-    margin: 10px 0;
-    color: #15f8e1; /* Neon yellow */
+.anime-item {
+    margin: 15px;
+    text-align: center;
 }
 
-/* Styling for horizontal lines */
-hr {
-    border: none;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
-    margin: 30px 0;
+.anime-item img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

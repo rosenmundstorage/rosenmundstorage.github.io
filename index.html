@@ -3,30 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storage</title>
+    <title>Anime Streaming</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="hamburger.css">
-    <link rel="icon" href="" type="image/icon type">
 </head>
 <body>
-    <div class="container" id="storageContainer">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <h1>Brutal Cloud Storage</h1>
-        <!-- <script src="https://brutalstorage.github.io/de3.js"></script> -->
+    <header>
+        <h1>Anime Streaming Site</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+    </header>
 
-        <!-- Your existing file display script here -->
-        <script src="hamburger.js"></script>
-    </div>
+    <main>
+        <section id="home">
+            <h2>Featured Anime</h2>
+            <div class="anime-list">
+                <div class="anime-item">
+                    <img src="anime1.jpg" alt="Anime 1">
+                    <h3>Anime Title 1</h3>
+                    <button onclick="watchAnime('anime 1')">Watch Now</button>
+                </div>
+                <div class="anime-item">
+                    <img src="anime2.jpg" alt="Anime 2">
+                    <h3>Anime Title 2</h3>
+                    <button onclick="watchAnime('path/to/your/video2.mp4')">Watch Now</button>
+                </div>
+                <!-- Add more anime items as needed -->
+            </div>
+        </section>
+
+        <section id="videoPlayer" style="display:none;">
+            <h2>Now Playing</h2>
+            <video id="video" width="600" controls>
+                <source id="videoSource" src=".dd/VID_20231221_231020_340.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is a simple anime streaming site.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@animestreaming.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Anime Streaming Site</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
